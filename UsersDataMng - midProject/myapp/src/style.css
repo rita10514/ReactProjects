@@ -1,0 +1,124 @@
+
+body {
+    position: relative;
+}
+
+#wrapper{
+    overflow: hidden;
+    margin-top: 80px;
+    width: 600px;
+    height: 1000px;
+    
+    
+}
+
+.divLikeButton{
+    width: fit-content;
+    padding: 1px;
+    margin: auto;
+    background-color: gray;
+    color: white;
+
+}
+
+.usersComp{
+    border: 1px solid;
+    
+    border-color: gray;
+    width: 400px;
+    height: 785px;
+    margin: 20px 50px 50px 50px ;
+    padding: 30px;
+    
+    text-align: center;
+
+    overflow: hidden ;
+    overflow-y: scroll ;
+}
+
+.userComp{
+
+    border: 1px solid ;
+    width: 300px;
+    margin: 30px;
+    padding: 20px;
+    
+}
+
+.popUps{
+
+    border: 1px solid ;
+    width: 350px;
+    height: 300px;
+    margin:  auto;
+    
+    overflow: hidden ;
+    overflow-y: scroll ;
+    
+    
+}
+.popUpItems{
+    margin: 30px auto;
+    border: 1px solid;
+    border-color: black;
+    padding: 10px;
+    width: 280px;
+
+}
+
+#addUser{
+    position: absolute;
+    top: 200px;
+    left: 650px;
+}
+
+#otherOptions{
+    border: 1px solid ;
+    position: absolute;
+    top: 70px;
+    left: 550px;
+    width: 400px;
+    height: 750px;
+    padding: 50px 30px;
+    
+}
+
+#addUser{
+    border: 1px solid ;
+    width: 200px;
+    height: 150px;
+}
+
+.btn{
+    margin: 15px;
+}
+
+.addWin{
+    border: 1px solid ;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto 30px;
+    padding-top: 100px;
+}
+
+.marginLeft{
+    margin-left: 260px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}

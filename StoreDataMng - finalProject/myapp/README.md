@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+Node.JS Cinema Data Management
+============
+This is a node.js website for cinema employees where they can manage members’ and movies’ data. each employee has individualized permissions to add, update and delete movies, subscribers, and employees.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Features
+- add, update, and delete data
+- access management
+- search and sort movies
+- login and register (only employees that were added by the admin can register)
+- route protection using sessions
+- includes individuall session time out for each user
 
-In the project directory, you can run:
 
-### `npm start`
+#### Data Structure:
+- **2 Rest-APIs from [jsonplaceholder](jsonplaceholder.typicode.com):** initial members and movies data
+- **2 JSON Files:** users and permissions (first user (the admin) will always be with all permissions)
+- **Rest-API:** manages a MongoDB database with 3 collections:
+                users, members (initiated with the APIs from jsonplaceholder), and subs (empty at first run)  
+- **MongoDB database** of users(employees)                   
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
+You can use [studio3t](https://studio3t.com/download/) for the following steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Create a MongoDB database called usersDB and add a user. use the example below:
 
-### `npm test`
+![usersDB](https://i.imgur.com/rssibm1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This will be the Admin of the website.
 
-### `npm run build`
+Go to \data\users.JSON and change the user id according to your database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![replaceId](https://i.imgur.com/U5cW6IE.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a MongoDB database called cinemaDB with the 3 following collections:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![CinemaDB](https://i.imgur.com/zlKjvhZ.png) 
 
-### `npm run eject`
+This project consists of two directories: client-side and Rest-API, both need to run at the same time.
+Open each directory in VS Code and run `npm install` for each, to install all the dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+Once the dependencies are installed, you can run  `npm start` on each VS code window, to start the application. You will then be able to access the website at localhost:3000.
+Now you can log in with the username and password according to your users' database. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When the Admin adds a new user, he decides what will be his username. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+When the new employee wants to log in, he first needs to sign up by clicking on "Sign Up" On the login page. Then he chooses a password for the username he received from the admin. He can log in after the sign-up is done.
 
-## Learn More
+<div align="center">
+  <img align=center height="300"  src="https://i.imgur.com/uNQQnEn.png">&nbsp &nbsp
+  <img align=center height="250"  src="https://i.imgur.com/vwK8Qfu.png">
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Preview
+<div align="center">
+  <img align=center height="600"  src="https://media.giphy.com/media/v7fN7IPJCD3uCT0DL6/giphy.gif">
+</div>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

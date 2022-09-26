@@ -1,4 +1,4 @@
-react Cinema Data Management
+React Store Data Management
 ============
 This is a website for managing a store data.
 
@@ -27,11 +27,12 @@ Go to [firebase](https://firebase.google.com/?gclid=EAIaIQobChMI1Oek6qaz-gIVA4jV
 
 Go to the src\firebase file and copy your configuration information.
 
-![firebase](https://i.imgur.com/XRlSv4D.png)
+![firebase](https://i.imgur.com/XRlSv4Dl.png)
 
 Create the collections and the anitial data mantioned above.
 
 ![example](https://i.imgur.com/oHKRb7l.png)
+
 
 Open the directory in VS Code and run `npm install`, to install all the dependencies.
 

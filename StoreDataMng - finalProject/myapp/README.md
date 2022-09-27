@@ -45,7 +45,7 @@ Once the dependencies are installed, you can run  `npm start`, to start the appl
 
 ## Preview
 <div align="center">
-  <img align=center height="600"  src="https://media.giphy.com/media/v7fN7IPJCD3uCT0DL6/giphy.gif">
+  <img align=center height="400"  src="https://media.giphy.com/media/wPM2ey0eJw61ds0SfZ/giphy.gif">
 </div>
 
 
